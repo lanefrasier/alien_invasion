@@ -25,8 +25,8 @@ class Ship(Sprite):
         #Movement flag; start with a ship thats not moving
         self.moving_right = False
         self.moving_left = False
-        #self.moving_up = False
-        #self.moving_down = False
+        # self.moving_up = False
+        # self.moving_down = False
 
     def center_ship(self):
         """Center the ship on the screen"""
@@ -40,10 +40,10 @@ class Ship(Sprite):
             self.x += self.settings.ship_speed
         if self.moving_left and self.rect.left > 0:
             self.x -= self.settings.ship_speed
-        #if self.moving_down and self.rect.bottom < self.screen_rect.bottom:
-            #self.y += self.settings.ship_speed
-        #if self.moving_up and self.rect.top > 0:
-            #self.y -= self.settings.ship_speed
+        # if self.moving_down and self.rect.bottom < self.screen_rect.bottom:
+        #     self.y += self.settings.ship_speed
+        # if self.moving_up and self.rect.top > 0:
+        #     self.y -= self.settings.ship_speed
 
         #Update rect object from self.x
         self.rect.x = self.x
